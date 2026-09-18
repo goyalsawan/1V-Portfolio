@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
   background-color: #12151c;
   color: #e2e8f0;
 }
@@ -27,7 +28,8 @@ body {
 /* Snap Slide Container */
 .snap-slide {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: normal;
+  scroll-margin-top: 4.5rem;
   min-height: 100vh;
 }
 
