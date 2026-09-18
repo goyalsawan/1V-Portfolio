@@ -14,6 +14,7 @@ export const SLIDES: SlideItem[] = [
   { id: "hero", label: "Executive Overview", shortLabel: "Overview" },
   { id: "about", label: "Who am I?", shortLabel: "About" },
   { id: "projects", label: "Flagship AI Projects", shortLabel: "Projects" },
+  { id: "services", label: "Services & Capabilities", shortLabel: "Services" },
   { id: "skills", label: "Production AI Stack", shortLabel: "Toolchain" },
   { id: "experience", label: "Enterprise Track Record", shortLabel: "Experience" },
   { id: "education", label: "Academic Foundation", shortLabel: "Education" },
@@ -90,7 +91,7 @@ export const PresentationNav: React.FC = () => {
       } else if (e.key === "End") {
         e.preventDefault();
         scrollToSlide(SLIDES.length - 1);
-      } else if (e.key >= "1" && e.key <= "7") {
+      } else if (e.key >= "1" && e.key <= "8") {
         const targetSlide = parseInt(e.key, 10) - 1;
         if (targetSlide >= 0 && targetSlide < SLIDES.length) {
           e.preventDefault();
@@ -250,11 +251,13 @@ export const PresentationNav: React.FC = () => {
         <span className="flex items-center gap-1.5 text-[#f1f5f9] font-medium">
           <span className="w-2 h-2 rounded-full bg-calm-indigo-400 animate-pulse" />
           <span>Slide 0{activeSlide + 1}:</span>
-          <span className="text-calm-indigo-300 font-semibold">{SLIDES[activeSlide].label}</span>
+          <span className="text-calm-indigo-300 font-semibold">
+            {SLIDES[activeSlide]?.label || ""}
+          </span>
         </span>
         <span className="text-zinc-600">|</span>
         <span className="text-[11px] text-zinc-500 flex items-center gap-1">
-          Use <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">↓</kbd> <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">↑</kbd> or <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">1-7</kbd> to navigate
+          Use <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">↓</kbd> <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">↑</kbd> or <kbd className="px-1.5 py-0.5 rounded bg-[#141822] border border-[#283144] text-zinc-300 font-mono text-[10px]">1-8</kbd> to navigate
         </span>
       </div>
     </>

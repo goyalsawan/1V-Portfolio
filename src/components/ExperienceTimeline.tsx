@@ -20,7 +20,7 @@ export const ExperienceTimeline: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-rose-400 bg-calm-rose-950/40 border border-calm-rose-800/50 px-2.5 py-0.5 rounded">
-              05 // CAREER
+              06 // CAREER
             </span>
             <BrutalistBadge color="rose" size="sm">
               PROFESSIONAL TRACK RECORD

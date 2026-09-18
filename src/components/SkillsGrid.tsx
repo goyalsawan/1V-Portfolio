@@ -19,7 +19,7 @@ export const SkillsGrid: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-sky-400 bg-calm-sky-950/40 border border-calm-sky-800/50 px-2.5 py-0.5 rounded">
-              CHAPTER 03
+              05 // TOOLCHAIN
             </span>
             <BrutalistBadge color="sky" size="sm">
               APPLICATION STACK ARCHITECTURE

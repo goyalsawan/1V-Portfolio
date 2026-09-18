@@ -18,7 +18,7 @@ export const ProjectsTeaser: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-indigo-400 bg-calm-indigo-950/40 border border-calm-indigo-800/50 px-2.5 py-0.5 rounded">
-              CHAPTER 02
+              03 // PROJECTS
             </span>
             <BrutalistBadge color="indigo" size="md">
               ENTERPRISE AI PORTFOLIO

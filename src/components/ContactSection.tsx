@@ -46,13 +46,13 @@ export const ContactSection: React.FC = () => {
         <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-amber-400 bg-calm-amber-950/40 border border-calm-amber-800/50 px-2.5 py-0.5 rounded">
-              CHAPTER 06
+              08 // CONTACT
             </span>
             <BrutalistBadge color="amber" size="md">
               GET IN TOUCH
             </BrutalistBadge>
             <BrutalistBadge color="emerald" size="md">
-              OPEN FOR ENGINEERING ROLES
+              OPEN FOR ROLES &amp; CONTRACTS
             </BrutalistBadge>
           </div>
 
@@ -181,13 +181,35 @@ export const ContactSection: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="space-y-1">
-                    <label className="font-medium text-zinc-400">Opportunity / Role Details</label>
+                  <div className="space-y-1.5">
+                    <label className="font-medium text-zinc-400">Inquiry Type / Opportunity</label>
+                    <div className="flex flex-wrap gap-1.5 pb-1">
+                      {[
+                        "Contract / MVP Sprint",
+                        "Fractional Tech Lead",
+                        "Full-Time Role",
+                        "Backend Architecture",
+                        "AI Strategy / Consulting"
+                      ].map((topic) => (
+                        <button
+                          key={topic}
+                          type="button"
+                          onClick={() => setFormData({ ...formData, roleOrProject: topic })}
+                          className={`px-2.5 py-1 rounded-lg text-[11px] font-mono border transition-all cursor-pointer ${
+                            formData.roleOrProject === topic
+                              ? "bg-calm-indigo-950/70 border-calm-indigo-500 text-calm-indigo-300 font-semibold"
+                              : "bg-[#141822] border-[#242c3d] text-zinc-400 hover:text-zinc-200 hover:border-zinc-500"
+                          }`}
+                        >
+                          {topic}
+                        </button>
+                      ))}
+                    </div>
                     <input
                       type="text"
                       value={formData.roleOrProject}
                       onChange={(e) => setFormData({ ...formData, roleOrProject: e.target.value })}
-                      placeholder="e.g. Software Engineer (Cloud & High Scale), Full-Stack AI Engineer"
+                      placeholder="e.g. Contract MVP, Fractional Architect, or Full-Time Engineering Role"
                       className="w-full p-2.5 rounded-xl bg-[#141822] border border-[#242c3d] text-xs sm:text-sm focus:outline-none focus:border-calm-indigo-500 shadow-sm text-zinc-200"
                     />
                   </div>
