@@ -115,7 +115,7 @@ export const Header: React.FC = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
           >
-            05. Experience @ Saptang Labs
+            05. Experience (KSquare & Saptang)
           </Link>
           <Link
             href="/#education"

@@ -30,7 +30,7 @@ export default function ExperiencePage() {
           </Link>
 
           <div className="font-mono text-xs text-zinc-400">
-            Saptang Labs &bull; IIT Bombay
+            KSquare Systems &bull; Saptang Labs
           </div>
         </div>
 
@@ -41,7 +41,7 @@ export default function ExperiencePage() {
               CAREER TRACK RECORD
             </span>
             <BrutalistBadge color="amber" size="sm">
-              HIGH-THROUGHPUT CLOUD & DISTRIBUTED SYSTEMS
+              PRODUCTION AI &amp; DISTRIBUTED SYSTEMS
             </BrutalistBadge>
           </div>
 
@@ -50,7 +50,7 @@ export default function ExperiencePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#94a3b8] leading-relaxed">
-            Hands-on technical leadership, cloud architecture, C++ NGINX reverse-proxy filtering, and performance benchmarking across high-scale distributed systems.
+            Hands-on technical leadership across autonomous multi-agent AI systems, multimodal valuation engines, and high-scale distributed backends (80M+ events/hr).
           </p>
         </header>
 

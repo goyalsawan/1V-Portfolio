@@ -25,8 +25,48 @@ export interface EducationItem {
 
 export const EXPERIENCES: ExperienceItem[] = [
   {
+    company: "KSquare Systems",
+    role: "Full-Stack AI Engineer / Solution Architect",
+    location: "Bengaluru, India",
+    period: "2024 – Present",
+    badge: "ENTERPRISE AI SYSTEMS",
+    summary:
+      "Architecting enterprise-grade autonomous multi-agent systems, multimodal property valuation intelligence, and adaptive AI LMS platforms. Engineering production LangGraph state machines, pgvector hybrid search, and low-latency streaming backends for B2B enterprise clients.",
+    glimpse: {
+      headline: "Autonomous Multi-Agent AI & Multimodal Intelligence Engines",
+      stats: [
+        { label: "Deflection Rate", value: "64.2%" },
+        { label: "Streaming TTFT", value: "<500 ms" },
+        { label: "Table Precision", value: "98.4%" },
+        { label: "Course Completion", value: "52.4%" },
+      ],
+      coreTakeaway:
+        "Architected 3 flagship production AI systems combining LangGraph multi-agent orchestration, pgvector hybrid retrieval, and low-latency FastAPI pipelines.",
+    },
+    highlights: [
+      "Architected an autonomous multi-agent customer support resolution platform achieving 64.2% autonomous deflection across 45,000+ monthly Tier-1/Tier-2 enterprise support tickets with deterministic tool-calling sagas.",
+      "Engineered a multimodal real estate deal intelligence engine using LayoutLMv3, Claude 3.5 Sonnet Vision, and PostGIS, reducing 100-page appraisal PDF underwriting screening from 4 days to under 90 seconds.",
+      "Built an AI-first adaptive enterprise LMS turning technical repositories and internal wikis into interactive Socratic learning DAGs with isolated gVisor code execution sandboxes (<4s grading turnaround).",
+      "Implemented strict PII scrubbing (Microsoft Presidio) and comprehensive LLM evaluation suites (Langfuse, Ragas) achieving 99.8%+ citation faithfulness and sub-500ms time-to-first-token streaming.",
+    ],
+    technologies: [
+      "Python (FastAPI)",
+      "LangGraph",
+      "Claude 3.5 Sonnet",
+      "GPT-4o",
+      "PostgreSQL (pgvector)",
+      "Redis",
+      "Docker",
+      "Langfuse",
+      "TypeScript",
+      "Next.js",
+      "PostGIS",
+      "gVisor Sandboxes",
+    ],
+  },
+  {
     company: "Saptang Labs",
-    role: "Software Engineer — Excalibur Bot-Detection PoC",
+    role: "Software Engineer — Excalibur Bot-Detection Platform",
     location: "Chennai / Bengaluru, India",
     period: "Jul. 2022 – Jun. 2024",
     badge: "80M+ EVENTS/HR SCALE",
@@ -64,36 +104,6 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Prometheus & Grafana",
       "Jenkins & GitHub Actions",
       "Kafka / RabbitMQ",
-    ],
-  },
-  {
-    company: "Saptang Labs",
-    role: "Cybersecurity Intern",
-    location: "Chennai / Remote",
-    period: "Dec. 2021 – Jun. 2022",
-    badge: "INTER-IIT GOLD MEDALIST",
-    summary:
-      "Secured pre-placement internship offer after winning Gold in the National NetSec Hackathon at Inter-IIT Tech Meet 9.0. Built and validated security proof-of-concepts in containerized environments.",
-    glimpse: {
-      headline: "Exploit Research & Sandbox Security PoCs",
-      stats: [
-        { label: "Hackathon", value: "Gold Medalist" },
-        { label: "PoCs Tested", value: "8 CVEs" },
-        { label: "Environment", value: "Docker Sandbox" },
-      ],
-      coreTakeaway:
-        "Won Gold at Inter-IIT Tech Meet 9.0 representing IIT Bombay; developed 8 reproducible CVE exploit testbeds in isolated Docker containers.",
-    },
-    highlights: [
-      "Won Gold in the NetSec Hackathon at Inter-IIT Tech Meet 9.0 representing IIT Bombay; received internship offer from Saptang Labs.",
-      "Developed and tested 8 proof-of-concept implementations for CVE vulnerabilities in isolated Docker sandbox environments; documented technical findings and presented remediation insights to core engineering teams.",
-    ],
-    technologies: [
-      "Python",
-      "Docker",
-      "Network Security",
-      "CVE Remediation",
-      "Linux / Bash",
     ],
   },
 ];
