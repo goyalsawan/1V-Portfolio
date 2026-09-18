@@ -1,0 +1,32 @@
+[
+  {
+    "event_name": "projects_hub_opened",
+    "event_description": "A visitor opens the portfolio projects hub from a prominent call to action.",
+    "file": "src/components/Hero.tsx"
+  },
+  {
+    "event_name": "contact_section_opened",
+    "event_description": "A visitor selects a call to action that navigates to the contact section.",
+    "file": "src/components/Hero.tsx"
+  },
+  {
+    "event_name": "project_preview_selected",
+    "event_description": "A visitor selects a specific project preview before entering the projects hub.",
+    "file": "src/components/ProjectsTeaser.tsx"
+  },
+  {
+    "event_name": "presentation_slide_selected",
+    "event_description": "A visitor uses the presentation controls to navigate directly to a portfolio section.",
+    "file": "src/components/PresentationNav.tsx"
+  },
+  {
+    "event_name": "contact_detail_copied",
+    "event_description": "A visitor copies a direct contact channel without including the contact value in analytics.",
+    "file": "src/components/ContactSection.tsx"
+  },
+  {
+    "event_name": "contact_form_submitted",
+    "event_description": "A visitor submits the portfolio contact form without sending form-entered personal data to analytics.",
+    "file": "src/components/ContactSection.tsx"
+  }
+]

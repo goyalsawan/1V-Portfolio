@@ -5,6 +5,7 @@ import { Mail, Send, Copy, Check, ArrowUpRight, Phone, MapPin, GraduationCap } f
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { BrutalistButton } from "@/components/ui/BrutalistButton";
 import { BrutalistBadge } from "@/components/ui/BrutalistBadge";
+import { captureEvent } from "@/lib/analytics";
 
 export const ContactSection: React.FC = () => {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -17,18 +18,21 @@ export const ContactSection: React.FC = () => {
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(myEmail);
+    captureEvent("contact_detail_copied", { channel: "email" });
     setCopiedEmail(true);
     setTimeout(() => setCopiedEmail(false), 2500);
   };
 
   const handleCopyPhone = () => {
     navigator.clipboard.writeText(myPhone);
+    captureEvent("contact_detail_copied", { channel: "phone" });
     setCopiedPhone(true);
     setTimeout(() => setCopiedPhone(false), 2500);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    captureEvent("contact_form_submitted", { form: "portfolio_contact" });
     setFormSubmitted(true);
   };
 

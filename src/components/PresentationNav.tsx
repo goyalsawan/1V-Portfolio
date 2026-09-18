@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { ChevronUp, ChevronDown } from "lucide-react";
+import { captureEvent } from "@/lib/analytics";
 
 export interface SlideItem {
   id: string;
@@ -11,6 +12,7 @@ export interface SlideItem {
 
 export const SLIDES: SlideItem[] = [
   { id: "hero", label: "Executive Overview", shortLabel: "Overview" },
+  { id: "about", label: "Who am I?", shortLabel: "About" },
   { id: "projects", label: "Flagship AI Projects", shortLabel: "Projects" },
   { id: "skills", label: "Production AI Stack", shortLabel: "Toolchain" },
   { id: "experience", label: "Enterprise Track Record", shortLabel: "Experience" },
@@ -59,7 +61,12 @@ export const PresentationNav: React.FC = () => {
   }, [activeSlide]);
 
   const scrollToSlide = (index: number) => {
-    document.getElementById(SLIDES[index].id)?.scrollIntoView({ behavior: "smooth" });
+    const slide = SLIDES[index];
+    document.getElementById(slide.id)?.scrollIntoView({ behavior: "smooth" });
+    captureEvent("presentation_slide_selected", {
+      slide_id: slide.id,
+      slide_index: index + 1,
+    });
   };
 
   return (

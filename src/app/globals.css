@@ -12,7 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
   background-color: #12151c;
   color: #e2e8f0;
 }
@@ -29,7 +28,7 @@ body {
 .snap-slide {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  min-h-screen: 100vh;
+  min-height: 100vh;
 }
 
 /* Custom scrollbar with soft contrast */

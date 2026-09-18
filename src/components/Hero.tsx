@@ -4,6 +4,7 @@ import React from "react";
 import { ArrowDown, ArrowDownRight, Mail } from "lucide-react";
 import { BrutalistButton } from "@/components/ui/BrutalistButton";
 import { BrutalistBadge } from "@/components/ui/BrutalistBadge";
+import { captureEvent } from "@/lib/analytics";
 
 export const Hero: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ export const Hero: React.FC = () => {
             variant="secondary"
             asAnchor
             href="/projects/"
+            onClick={() => captureEvent("projects_hub_opened", { source: "hero" })}
             icon={<ArrowDownRight className="w-4 h-4 stroke-[2.5]" />}
           >
             Explore Flagship Systems
@@ -53,6 +55,7 @@ export const Hero: React.FC = () => {
             variant="outline"
             asAnchor
             href="#contact"
+            onClick={() => captureEvent("contact_section_opened", { source: "hero" })}
             icon={<Mail className="w-4 h-4 text-zinc-400" />}
           >
             Contact & Availability

@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { ArrowUp } from "lucide-react";
 import { STACK_LAYERS } from "@/data/skills";
 import { BrutalistBadge } from "@/components/ui/BrutalistBadge";
 import { TechIcon } from "@/components/ui/TechIcons";
@@ -90,15 +89,6 @@ export const SkillsGrid: React.FC = () => {
                     ))}
                   </div>
                 </div>
-
-                {/* Connecting Up Arrow between Stacked Layers */}
-                {!isLast && (
-                  <div className="flex items-center justify-center -my-1 py-0.5">
-                    <div className="w-5 h-5 rounded-full bg-[#141822] border border-[#283144] flex items-center justify-center shadow-sm text-calm-indigo-400">
-                      <ArrowUp className="w-3 h-3 stroke-[2.5]" />
-                    </div>
-                  </div>
-                )}
               </React.Fragment>
             );
           })}

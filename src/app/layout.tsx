@@ -2,20 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "AI Engineer Portfolio | Staff & Senior AI Engineer",
+  title: "Sawan Goyal | Software Engineer & AI Systems (IIT Bombay)",
   description:
-    "Portfolio of a Full-Stack AI Engineer specializing in production-grade multi-agent systems, high-throughput RAG pipelines, multimodal vision intelligence, and sub-500ms streaming at scale.",
+    "Portfolio of Sawan Goyal (IIT Bombay Alum, Ex-Saptang Labs) specializing in high-scale distributed systems (80M+ events/hr), production multi-agent architectures, low-latency C++ reverse-proxies, and cloud infrastructure.",
   keywords: [
+    "Sawan Goyal",
+    "IIT Bombay",
+    "Software Engineer",
     "AI Engineer",
     "Multi-Agent Systems",
-    "LangGraph",
-    "RAG",
-    "pgvector",
+    "Distributed Systems",
+    "High-Scale Architecture",
     "FastAPI",
-    "Claude 3.5",
-    "GPT-4o",
-    "Ksquare Systems",
-    "Production AI",
+    "LangGraph",
+    "C++ NGINX",
+    "AWS",
   ],
 };
 
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased selection:bg-neo-yellow selection:text-black">
+      <body className="antialiased selection:bg-[#3b4261] selection:text-[#f1f5f9]">
         {children}
       </body>
     </html>

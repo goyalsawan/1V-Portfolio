@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, CheckCircle2, Cpu, Eye, Workflow, Sparkles } from "lucide-react";
 import { PROJECTS } from "@/data/projects";
 import { BrutalistBadge } from "@/components/ui/BrutalistBadge";
+import { captureEvent } from "@/lib/analytics";
 
 export const ProjectsTeaser: React.FC = () => {
   return (
@@ -48,6 +49,12 @@ export const ProjectsTeaser: React.FC = () => {
             <Link
               key={project.id}
               href="/projects/"
+              onClick={() =>
+                captureEvent("project_preview_selected", {
+                  project_slug: project.slug,
+                  source: "projects_teaser",
+                })
+              }
               className="p-5 rounded-2xl bg-[#181d28] border border-[#283144] hover:border-[#3d4d6e] hover:bg-[#1c2230] transition-all flex flex-col justify-between space-y-4 group shadow-sm"
             >
               <div className="space-y-2.5">

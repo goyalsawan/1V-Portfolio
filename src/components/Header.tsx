@@ -13,11 +13,15 @@ export const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo / Brand */}
         <Link href="/#hero" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-lg bg-[#1a1f2c] border border-[#2c3547] text-calm-indigo-400 flex items-center justify-center font-mono font-bold text-sm shadow-sm group-hover:border-calm-indigo-400/60 transition-colors">
-            SG
+          <div className="relative w-8 h-8 rounded-lg overflow-hidden border border-[#2c3547] bg-[#1a1f2c] shrink-0 group-hover:border-calm-indigo-400/60 transition-colors">
+            <img
+              src="/images/sawan-goyal.png"
+              alt="Sawan Goyal"
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div className="flex flex-col">
-            <span className="font-heading font-bold text-base tracking-tight leading-none text-[#e2e8f0]">
+            <span className="font-heading font-bold text-base tracking-tight leading-none text-[#f1f5f9]">
               Sawan Goyal<span className="text-calm-indigo-400 font-bold">.</span>
             </span>
             <span className="font-mono text-[10px] text-zinc-400 font-medium">
@@ -27,9 +31,12 @@ export const Header: React.FC = () => {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden md:flex items-center gap-7 font-sans text-sm font-medium text-zinc-400">
+        <nav className="hidden md:flex items-center gap-6 font-sans text-sm font-medium text-zinc-400">
           <Link href="/#hero" className="hover:text-zinc-200 transition-colors">
             Overview
+          </Link>
+          <Link href="/#about" className="hover:text-zinc-200 transition-colors">
+            Who am I?
           </Link>
           <Link href="/projects/" className="hover:text-zinc-200 transition-colors flex items-center gap-1.5 text-zinc-200 font-semibold">
             <span>Projects</span>
@@ -66,6 +73,7 @@ export const Header: React.FC = () => {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="md:hidden p-2 rounded-lg border border-[#242b3a] text-zinc-300 hover:bg-[#1a1f2c] transition-colors"
           aria-label="Toggle navigation menu"
+          aria-expanded={mobileMenuOpen}
         >
           {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -82,32 +90,39 @@ export const Header: React.FC = () => {
             01. Overview
           </Link>
           <Link
-            href="/projects/"
+            href="/#about"
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-calm-indigo-400 font-semibold transition-colors"
           >
-            02. Projects Hub (3 Systems)
+            02. Who am I? (Profile)
+          </Link>
+          <Link
+            href="/projects/"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
+          >
+            03. Projects Hub (3 Systems)
           </Link>
           <Link
             href="/#skills"
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
           >
-            03. Production Toolchain
+            04. Production Toolchain
           </Link>
           <Link
             href="/experience/"
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
           >
-            04. Experience @ Saptang Labs
+            05. Experience @ Saptang Labs
           </Link>
           <Link
             href="/#education"
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
           >
-            05. Education (IIT Bombay)
+            06. Education (IIT Bombay)
           </Link>
 
           <div className="pt-2">
