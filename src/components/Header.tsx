@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           <Link href="/projects/" className="hover:text-zinc-200 transition-colors flex items-center gap-1.5 text-zinc-200 font-semibold">
             <span>Projects</span>
             <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-calm-indigo-950/60 text-calm-indigo-400 border border-calm-indigo-800/50">
-              3
+              4
             </span>
           </Link>
           <Link href="/services/" className="hover:text-zinc-200 transition-colors">
@@ -104,7 +104,7 @@ export const Header: React.FC = () => {
             onClick={() => setMobileMenuOpen(false)}
             className="block p-2.5 rounded-lg hover:bg-[#1a1f2c] text-zinc-200 transition-colors"
           >
-            03. Projects Hub (3 Systems)
+            03. Projects Hub (4 Systems)
           </Link>
           <Link
             href="/services/"

@@ -50,7 +50,7 @@ export default function ProjectsPage() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#94a3b8] leading-relaxed">
-            High-throughput multi-agent architectures, multimodal intelligence pipelines, and adaptive AI systems architected and deployed for B2B enterprise clients at <strong className="text-zinc-200 font-semibold">Ksquare Systems</strong>.
+            Multi-agent LangGraph architectures, Voice AI systems, distributed candidate sourcing grids, and real-time bot-mitigation engines (80M+ events/hr) architected across <strong className="text-zinc-200 font-semibold">Ksquare Systems</strong> and <strong className="text-zinc-200 font-semibold">Saptang Labs</strong>.
           </p>
         </header>
 

@@ -43,40 +43,40 @@ export const ProjectsTeaser: React.FC = () => {
           </p>
         </div>
 
-        {/* 3 Quick Preview Cards + Prominent Direct Link */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 font-sans">
+        {/* 4 Quick Preview Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 font-sans">
           {PROJECTS.map((project, idx) => (
             <Link
               key={project.id}
-              href="/projects/"
+              href={`/projects/${project.slug}`}
               onClick={() =>
                 captureEvent("project_preview_selected", {
                   project_slug: project.slug,
                   source: "projects_teaser",
                 })
               }
-              className="p-5 rounded-2xl bg-[#181d28] border border-[#283144] hover:border-[#3d4d6e] hover:bg-[#1c2230] transition-all flex flex-col justify-between space-y-4 group shadow-sm"
+              className="p-4 rounded-2xl bg-[#181d28] border border-[#283144] hover:border-[#3d4d6e] hover:bg-[#1c2230] transition-all flex flex-col justify-between space-y-3 group shadow-sm"
             >
-              <div className="space-y-2.5">
+              <div className="space-y-2">
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-mono text-[11px] font-bold text-calm-indigo-400 bg-[#141822] border border-[#283144] px-2 py-0.5 rounded">
+                  <span className="font-mono text-[10px] font-bold text-calm-indigo-400 bg-[#141822] border border-[#283144] px-1.5 py-0.5 rounded">
                     0{idx + 1}
                   </span>
-                  <span className="text-[10px] font-mono text-zinc-400 uppercase">
-                    {project.badge.split(" / ")[0]}
+                  <span className="text-[9px] font-mono text-zinc-400 uppercase truncate">
+                    {project.badge.split(" • ")[0].split(" / ")[0]}
                   </span>
                 </div>
-                <h3 className="text-base font-bold font-heading text-[#f1f5f9] group-hover:text-calm-indigo-300 transition-colors leading-snug line-clamp-2">
+                <h3 className="text-sm font-bold font-heading text-[#f1f5f9] group-hover:text-calm-indigo-300 transition-colors leading-snug line-clamp-2">
                   {project.title}
                 </h3>
-                <p className="text-xs text-[#94a3b8] line-clamp-2 leading-relaxed">
+                <p className="text-[11px] text-[#94a3b8] line-clamp-2 leading-relaxed">
                   {project.tagline}
                 </p>
               </div>
 
-              <div className="pt-3 border-t border-[#242b3a] flex items-center justify-between text-xs font-mono text-zinc-400">
+              <div className="pt-2.5 border-t border-[#242b3a] flex items-center justify-between text-xs font-mono text-zinc-400">
                 <span className="text-calm-emerald-400 font-semibold">{project.metrics[0].value}</span>
-                <span className="text-[11px] text-zinc-500">{project.metrics[0].label}</span>
+                <span className="text-[10px] text-zinc-500 truncate max-w-[100px]">{project.metrics[0].label}</span>
               </div>
             </Link>
           ))}

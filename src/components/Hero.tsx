@@ -16,24 +16,24 @@ export const Hero: React.FC = () => {
         {/* Top Badges */}
         <div className="inline-flex flex-wrap items-center gap-2">
           <BrutalistBadge color="indigo" size="md">
-            SOFTWARE ENGINEER & AI SYSTEMS
+            SOFTWARE ENGINEER | FULL STACK AI SYSTEMS
           </BrutalistBadge>
           <BrutalistBadge color="emerald" size="md">
             IIT BOMBAY GRADUATE
           </BrutalistBadge>
           <span className="font-mono text-xs font-semibold text-zinc-400 bg-[#181d28] border border-[#283144] px-3 py-1 rounded-md">
-            EX-SAPTANG LABS (80M+ EVENTS/HR SCALE)
+            4+ YEARS &bull; TEAMS UP TO 5 ENG
           </span>
         </div>
 
         {/* Hero Title & Value Proposition */}
         <div className="space-y-5 max-w-4xl">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading tracking-tight text-[#f1f5f9] leading-[1.1]">
-            Architecting <span className="text-calm-indigo-400">High-Throughput & Production AI</span> Systems.
+            Architecting <span className="text-calm-indigo-400">Full-Stack AI &amp; High-Throughput</span> Systems.
           </h1>
 
           <p className="text-lg sm:text-xl text-[#94a3b8] font-sans leading-relaxed font-normal max-w-3xl">
-            Software Engineer (IIT Bombay) specializing in **high-scale distributed backends (80M+ events/hr, 60,000 RPS), multi-agent LLM systems, C++ NGINX reverse-proxy filtering, and low-latency cloud infrastructure**. Experienced across Python, Go, C++, AWS, and AI architectures.
+            Product-minded Software Engineer (IIT Bombay) with 4+ years of experience architecting and leading full-stack AI products, multi-agent LangGraph systems, conversational Voice AI, and high-throughput cloud services (80M+ events/hr). Led teams of up to 5 engineers from ambiguous requirements through scalable delivery.
           </p>
         </div>
 
@@ -62,23 +62,81 @@ export const Hero: React.FC = () => {
           </BrutalistButton>
         </div>
 
-        {/* Proof-Point Summary Bar */}
-        <div className="pt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 border-t border-[#242b3a]">
-          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] shadow-sm">
-            <div className="text-2xl sm:text-3xl font-bold font-heading text-[#f1f5f9]">64.2%</div>
-            <div className="text-xs text-zinc-400 font-medium mt-0.5">Autonomous Deflection</div>
+        {/* Architectural Competencies & Business Financial Impact Bar */}
+        <div className="pt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 border-t border-[#242b3a]">
+          {/* Card 1: Multi-Agent & Voice AI */}
+          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] hover:border-calm-indigo-500/50 transition-colors shadow-sm flex flex-col justify-between">
+            <div className="space-y-1">
+              <span className="font-mono text-[10px] font-bold text-calm-indigo-400 bg-calm-indigo-950/50 border border-calm-indigo-800/50 px-1.5 py-0.5 rounded">
+                01 // AI &amp; VOICE
+              </span>
+              <div className="text-sm font-bold font-heading text-[#f1f5f9] pt-1">
+                LangGraph &amp; Voice AI
+              </div>
+              <p className="text-[11px] text-zinc-400 leading-snug">
+                Sub-1.2s Voice AI (ElevenLabs), supervisor graphs &amp; multi-agent RAG.
+              </p>
+            </div>
           </div>
-          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] shadow-sm">
-            <div className="text-2xl sm:text-3xl font-bold font-heading text-[#f1f5f9]">&lt;500ms</div>
-            <div className="text-xs text-zinc-400 font-medium mt-0.5">Time to First Token</div>
+
+          {/* Card 2: High-Scale Distributed Cloud */}
+          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] hover:border-calm-sky-500/50 transition-colors shadow-sm flex flex-col justify-between">
+            <div className="space-y-1">
+              <span className="font-mono text-[10px] font-bold text-calm-sky-400 bg-calm-sky-950/50 border border-calm-sky-800/50 px-1.5 py-0.5 rounded">
+                02 // DISTRIBUTED SCALE
+              </span>
+              <div className="text-sm font-bold font-heading text-[#f1f5f9] pt-1">
+                80M+ Events/Hr (60k RPS)
+              </div>
+              <p className="text-[11px] text-zinc-400 leading-snug">
+                200+ AWS EC2 nodes, Kafka streaming buses &amp; sub-second SLAs.
+              </p>
+            </div>
           </div>
-          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] shadow-sm">
-            <div className="text-2xl sm:text-3xl font-bold font-heading text-[#f1f5f9]">98.4%</div>
-            <div className="text-xs text-zinc-400 font-medium mt-0.5">PDF Table Precision</div>
+
+          {/* Card 3: Low-Latency Systems */}
+          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] hover:border-calm-rose-500/50 transition-colors shadow-sm flex flex-col justify-between">
+            <div className="space-y-1">
+              <span className="font-mono text-[10px] font-bold text-calm-rose-400 bg-calm-rose-950/50 border border-calm-rose-800/50 px-1.5 py-0.5 rounded">
+                03 // SYSTEMS &amp; WAF
+              </span>
+              <div className="text-sm font-bold font-heading text-[#f1f5f9] pt-1">
+                C++ NGINX Modules
+              </div>
+              <p className="text-[11px] text-zinc-400 leading-snug">
+                Sub-500ms real-time blocking &amp; 100ms p99 API threat mitigation.
+              </p>
+            </div>
           </div>
-          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] shadow-sm">
-            <div className="text-2xl sm:text-3xl font-bold font-heading text-[#f1f5f9]">52.4%</div>
-            <div className="text-xs text-zinc-400 font-medium mt-0.5">LMS Completion Rate</div>
+
+          {/* Card 4: Business Financial Impact */}
+          <div className="p-3.5 bg-[#181d28] rounded-xl border border-calm-emerald-800/60 bg-gradient-to-br from-[#181d28] to-calm-emerald-950/30 hover:border-emerald-500/50 transition-colors shadow-sm flex flex-col justify-between">
+            <div className="space-y-1">
+              <span className="font-mono text-[10px] font-bold text-emerald-400 bg-emerald-950/60 border border-emerald-800/60 px-1.5 py-0.5 rounded">
+                04 // FINANCIAL IMPACT
+              </span>
+              <div className="text-sm font-bold font-heading text-emerald-300 pt-1">
+                $1M+ Impact Created
+              </div>
+              <p className="text-[11px] text-zinc-300 leading-snug">
+                30% team productivity gains &amp; cutting days of manual work to &lt;2 min.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 5: Engineering Leadership */}
+          <div className="p-3.5 bg-[#181d28] rounded-xl border border-[#283144] hover:border-amber-500/50 transition-colors shadow-sm flex flex-col justify-between">
+            <div className="space-y-1">
+              <span className="font-mono text-[10px] font-bold text-amber-400 bg-amber-950/50 border border-amber-800/50 px-1.5 py-0.5 rounded">
+                05 // LEADERSHIP
+              </span>
+              <div className="text-sm font-bold font-heading text-[#f1f5f9] pt-1">
+                Teams of up to 5 Eng
+              </div>
+              <p className="text-[11px] text-zinc-400 leading-snug">
+                0-to-1 architecture ownership from ambiguous specs to delivery.
+              </p>
+            </div>
           </div>
         </div>
 

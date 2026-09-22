@@ -45,14 +45,14 @@ export const ExperienceTimeline: React.FC = () => {
           </p>
         </div>
 
-        {/* Glimpse Cards Grid (2 Columns: KSquare Systems + Saptang Labs) */}
+        {/* Glimpse Cards Grid (2 Columns: Ksquare Systems + Saptang Labs) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
-          {/* Card 1: KSquare Systems */}
+          {/* Card 1: Ksquare Systems */}
           <div className="p-5 rounded-2xl bg-[#181d28] border border-[#283144] hover:border-[#38435d] transition-all flex flex-col justify-between space-y-4 shadow-sm group">
             <div className="space-y-3">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="font-mono text-[11px] font-bold text-calm-indigo-400 bg-[#141822] border border-[#283144] px-2 py-0.5 rounded">
-                  FULL-STACK AI ENGINEER
+                  SENIOR SOFTWARE ENGINEER
                 </span>
                 <span className="font-mono text-xs text-calm-emerald-400 font-semibold flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -65,7 +65,7 @@ export const ExperienceTimeline: React.FC = () => {
                   {ksquare.company}
                 </h3>
                 <p className="text-xs text-zinc-400 font-mono mt-0.5">
-                  Enterprise Multi-Agent &amp; Multimodal AI Platforms &bull; Bengaluru
+                  REPSS (Voice AI) &bull; Knowledge Base &bull; HiRed &bull; Jaipur (Remote)
                 </p>
               </div>
 
@@ -76,19 +76,19 @@ export const ExperienceTimeline: React.FC = () => {
               {/* Key Glimpse Metrics */}
               <div className="grid grid-cols-2 gap-2 pt-1">
                 <div className="p-2 rounded-xl bg-[#141822] border border-[#242c3d]">
-                  <div className="text-base sm:text-lg font-bold font-heading text-[#f1f5f9]">64.2%</div>
-                  <div className="text-[10px] font-mono text-zinc-400">Autonomous Deflection</div>
+                  <div className="text-base sm:text-lg font-bold font-heading text-[#f1f5f9]">&lt; 1.2s</div>
+                  <div className="text-[10px] font-mono text-zinc-400">Voice AI p99 Latency</div>
                 </div>
                 <div className="p-2 rounded-xl bg-[#141822] border border-[#242c3d]">
-                  <div className="text-base sm:text-lg font-bold font-heading text-[#f1f5f9]">&lt;500ms</div>
-                  <div className="text-[10px] font-mono text-zinc-400">Streaming Latency (TTFT)</div>
+                  <div className="text-base sm:text-lg font-bold font-heading text-[#f1f5f9]">30%</div>
+                  <div className="text-[10px] font-mono text-zinc-400">Productivity Savings</div>
                 </div>
               </div>
             </div>
 
             <div className="pt-2.5 border-t border-[#242b3a] flex items-center justify-between text-xs font-mono text-zinc-400">
-              <span className="text-calm-indigo-400 font-medium">3 Systems Deployed</span>
-              <span>LangGraph &bull; FastAPI &bull; pgvector</span>
+              <span className="text-calm-indigo-400 font-medium">Led Teams of up to 5</span>
+              <span>LangGraph &bull; ElevenLabs &bull; pgvector</span>
             </div>
           </div>
 
@@ -109,7 +109,7 @@ export const ExperienceTimeline: React.FC = () => {
                   {saptang.company}
                 </h3>
                 <p className="text-xs text-zinc-400 font-mono mt-0.5">
-                  Excalibur Bot-Detection Platform &bull; Chennai / Bengaluru
+                  Excalibur Bot-Mitigation Platform &bull; Chennai, India
                 </p>
               </div>
 
@@ -132,7 +132,7 @@ export const ExperienceTimeline: React.FC = () => {
 
             <div className="pt-2.5 border-t border-[#242b3a] flex items-center justify-between text-xs font-mono text-zinc-400">
               <span className="text-calm-emerald-400 font-medium">88% Deploy Time Cut</span>
-              <span>C++ &bull; AWS &bull; NGINX</span>
+              <span>C++ &bull; AWS &bull; NGINX &bull; Kafka</span>
             </div>
           </div>
         </div>
