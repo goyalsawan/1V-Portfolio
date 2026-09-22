@@ -33,18 +33,18 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     shortTitle: "Backend Architecture",
     badge: "HIGH-THROUGHPUT & RELIABILITY",
     color: "indigo",
-    tagline: "Architecting resilient, low-latency microservices, streaming pipelines, and robust database layers.",
-    description: "Designing end-to-end backend systems that handle high concurrency, stream LLM generation, and orchestrate complex asynchronous workflows with 99.9% uptime SLAs.",
+    tagline: "Architecting resilient, low-latency microservices, Kafka streaming buses, and robust database layers.",
+    description: "Designing end-to-end backend systems that handle high concurrency, stream real-time events at 80M+/hr, and orchestrate complex asynchronous workflows with 99.9% uptime SLAs.",
     deliverables: [
-      "High-throughput REST, GraphQL & gRPC API design",
-      "Sub-100ms streaming LLM generation & WebSocket pipelines",
-      "Asynchronous task queues (Celery, Redis, Kafka)",
-      "Database schema architecture (PostgreSQL, pgvector, Redis, MongoDB)",
-      "Role-Based Access Control (RBAC), OAuth2 & rate limiting"
+      "High-throughput REST, gRPC & WebSocket API design",
+      "Event-driven streaming architectures (Kafka, Redis Pub/Sub)",
+      "Asynchronous task worker queues (Celery, Redis, background jobs)",
+      "Database schema architecture (PostgreSQL, pgvector, MongoDB, Elasticsearch)",
+      "C++ in-path reverse-proxy modules & NGINX/WAF security integration"
     ],
-    technologies: ["Python", "FastAPI", "Go", "Node.js", "PostgreSQL", "pgvector", "Redis", "Kafka", "Docker"],
-    relatedProjectSlug: "customer-support-agent-platform",
-    relatedProjectTitle: "Support Agent Platform"
+    technologies: ["Python", "FastAPI", "Go", "C++", "Kafka", "PostgreSQL", "Redis", "Celery", "Elasticsearch"],
+    relatedProjectSlug: "excalibur-bot-intelligence",
+    relatedProjectTitle: "Excalibur Bot Defense"
   },
   {
     id: "frontend-engineering",
@@ -52,73 +52,75 @@ export const SERVICE_PILLARS: ServicePillar[] = [
     shortTitle: "Frontend Engineering",
     badge: "MODERN UX & STREAMING UI",
     color: "sky",
-    tagline: "Building high-performance, responsive web dashboards with real-time generative AI interfaces.",
-    description: "Translating complex AI workflows and spatial data into intuitive, lightning-fast user interfaces with component design systems and smooth animation states.",
+    tagline: "Building high-performance, responsive web dashboards with real-time audio playback and GIS maps.",
+    description: "Translating complex AI workflows, spatial datasets, and candidate matching pipelines into intuitive, lightning-fast user interfaces with component design systems.",
     deliverables: [
       "Production Next.js / React / TypeScript web applications",
-      "Real-time streaming generative AI interfaces & tool-call inspectors",
-      "Design systems & accessible component libraries (Tailwind CSS, Radix UI)",
-      "High-density analytics dashboards & spatial map visualizations",
+      "Real-time audio player interfaces & Voice AI interaction states",
+      "Interactive GIS spatial mapping overlays & polygon visualizers",
+      "Recruiter & analytics dashboards with 1-click decision controls",
       "Client-side performance optimization & Core Web Vitals tuning"
     ],
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion", "Mapbox", "Zustand"],
-    relatedProjectSlug: "real-estate-property-intelligence",
-    relatedProjectTitle: "Real Estate Property Intelligence"
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "GIS", "WebSockets"],
+    relatedProjectSlug: "repss-property-scoring",
+    relatedProjectTitle: "REPSS Property AI"
   },
   {
     id: "cloud-devops",
-    title: "Cloud Infrastructure, DevOps & Cost Optimization",
+    title: "Cloud Infrastructure, DevOps & Observability",
     shortTitle: "Cloud & DevOps",
     badge: "SCALABLE & COST-EFFICIENT",
     color: "emerald",
-    tagline: "Designing scalable cloud architectures on AWS/GCP with automated CI/CD and cost governance.",
-    description: "Deploying multi-tenant, zero-downtime infrastructure using infrastructure-as-code principles, automated testing gates, and aggressive cloud spend reduction.",
+    tagline: "Designing scalable cloud architectures on AWS (200+ EC2s) with automated CI/CD and telemetry.",
+    description: "Deploying multi-tenant, zero-downtime infrastructure using AWS VPC, CloudFormation, Docker containerization, automated testing gates (Locust/JMeter), and Prometheus/Grafana monitoring.",
     deliverables: [
-      "AWS & GCP cloud architecture (ECS, Cloud Run, Lambda, RDS, S3)",
+      "AWS cloud architecture (EC2, S3, Lambda, VPC, RDS, CloudFront)",
       "Docker containerization & multi-stage lightweight builds",
-      "Automated CI/CD pipelines via GitHub Actions with lint/test gates",
-      "Cloud spend audits & compute optimization (downsizing waste)",
-      "Infrastructure monitoring, logging & alert dispatchers"
+      "Automated CI/CD pipelines via Jenkins & GitHub Actions (88% faster deploys)",
+      "Load testing & performance benchmarking (Locust, JMeter at 60k RPS)",
+      "Production observability & metric dashboards (Prometheus, Grafana, CloudWatch)"
     ],
-    technologies: ["AWS", "GCP", "Docker", "Kubernetes", "GitHub Actions", "Terraform", "Cloudflare"],
-    relatedProjectSlug: "ai-learning-management-platform",
-    relatedProjectTitle: "AI Learning Management Platform"
+    technologies: ["AWS (EC2/S3/Lambda/VPC)", "Docker", "Jenkins", "GitHub Actions", "CloudFormation", "Prometheus", "Grafana", "Locust"],
+    relatedProjectSlug: "excalibur-bot-intelligence",
+    relatedProjectTitle: "Excalibur AWS Infrastructure"
   },
   {
     id: "ai-agentic-systems",
-    title: "Production AI & Agentic Systems Engineering",
-    shortTitle: "AI & Agentic Systems",
-    badge: "MULTI-AGENT & RAG",
+    title: "Production AI, Multi-Agent & Voice Systems",
+    shortTitle: "AI & Voice Systems",
+    badge: "MULTI-AGENT & VOICE AI",
     color: "purple",
-    tagline: "Developing production-grade Multi-Agent orchestrations, hybrid RAG pipelines, and LLM guardrails.",
-    description: "Bridging the gap between raw foundation models and enterprise reality through deterministic tool-calling, hybrid vector retrieval, and automated quality evaluation.",
+    tagline: "Developing production-grade LangGraph Multi-Agent workflows, ElevenLabs Voice AI, and hybrid RAG.",
+    description: "Bridging the gap between raw LLMs and business reality through stateful LangGraph agents, sub-1.2s conversational Voice AI, Playwright automated scrapers, and pgvector semantic retrieval.",
     deliverables: [
-      "Autonomous multi-agent workflows with state machines & fallback logic",
-      "Enterprise RAG pipelines with hybrid dense + sparse vector search",
-      "LLM latency optimization (prompt caching, speculative execution)",
-      "Evaluation suites for hallucination prevention & output faithfulness",
-      "Custom tool integration & external API execution sandboxes"
+      "Conversational Voice AI agents with sub-1.2s p99 latency (ElevenLabs, STT/TTS)",
+      "Stateful LangGraph supervisor workflows with deterministic function calling",
+      "Multi-platform automated candidate/data sourcing grids (Playwright, Celery)",
+      "Enterprise RAG pipelines with pgvector hybrid search & source citations",
+      "OCR-based unstructured document parsing & legal history extraction"
     ],
-    technologies: ["LangChain", "LlamaIndex", "pgvector", "OpenAI / Claude APIs", "DeepEval", "Ollama", "Python"],
-    relatedProjectSlug: "customer-support-agent-platform",
-    relatedProjectTitle: "Support Agent Platform"
+    technologies: ["LangGraph", "OpenAI", "ElevenLabs API", "Voice AI", "pgvector", "Playwright", "OCR"],
+    relatedProjectSlug: "repss-property-scoring",
+    relatedProjectTitle: "REPSS & HiRed Systems"
   },
   {
     id: "ai-business-consulting",
-    title: "AI Strategy, Feasibility & Business Impact Consulting",
-    shortTitle: "AI Strategy & Consulting",
-    badge: "ROI & FEASIBILITY",
+    title: "AI Strategy, Team Leadership & Business Impact",
+    shortTitle: "Strategy & Leadership",
+    badge: "ROI & LEADERSHIP",
     color: "amber",
-    tagline: "Consulting leadership teams on AI feasibility, ROI roadmaps, and secure enterprise adoption.",
-    description: "Helping founders, engineering leaders, and product teams cut through AI hype to identify high-ROI opportunities, evaluate technical feasibility, and de-risk deployment.",
+    tagline: "Leading engineering teams of up to 5 engineers and translating ambiguous specs into $1M+ business value.",
+    description: "Helping founders, engineering leaders, and product teams cut through AI hype, architect scalable systems from 0-to-1, lead sprint execution, and deliver 30%+ operational efficiency gains.",
     deliverables: [
-      "Technical AI feasibility audits & build-vs-buy decision matrix",
-      "AI ROI calculation & token cost modeling for scale",
-      "Data readiness assessments & proprietary knowledge indexing strategy",
-      "Security, privacy & compliance review for enterprise LLM usage",
-      "Technical architecture blueprints for executive leadership"
+      "0-to-1 architecture ownership from ambiguous requirements to production",
+      "Engineering team leadership, technical mentorship & code review (teams of 3–5)",
+      "AI ROI calculation & token/compute cost modeling for enterprise scale",
+      "Turnaround time reduction audits (slashing days of manual work to <2 minutes)",
+      "Technical architecture blueprints & stakeholder acceptance roadmaps"
     ],
-    technologies: ["AI Strategy", "ROI Modeling", "System Architecture", "Security Audits", "Data Governance"]
+    technologies: ["Engineering Leadership", "System Architecture", "ROI Modeling", "Team Mentorship", "Agile Execution"],
+    relatedProjectSlug: "enterprise-knowledge-management",
+    relatedProjectTitle: "Enterprise Knowledge Management"
   }
 ];
 
@@ -127,7 +129,7 @@ export const ENGAGEMENT_MODELS: EngagementModel[] = [
     title: "Contract MVP / Architecture Sprint",
     timeline: "2 to 6 Weeks",
     bestFor: "Early-stage startups & teams needing rapid 0-to-1 build or critical system overhaul.",
-    description: "Fast-paced, scoped engagements to architect, build, and deploy production-ready AI backends, fullstack MVPs, or cloud pipelines.",
+    description: "Fast-paced, scoped engagements to architect, build, and deploy production-ready AI backends, Voice AI pipelines, or cloud systems.",
     badge: "HIGH VELOCITY",
     color: "indigo"
   },
@@ -135,7 +137,7 @@ export const ENGAGEMENT_MODELS: EngagementModel[] = [
     title: "Fractional Architect / Tech Lead",
     timeline: "Monthly Retainer (10-20 hrs/week)",
     bestFor: "Growing engineering teams needing senior architectural oversight and AI guidance.",
-    description: "Ongoing advisory on system design, code reviews, AI/LLM evaluation, cloud cost optimization, and upskilling in-house developers.",
+    description: "Ongoing advisory on system design, code reviews, Voice/Agentic pipelines, cloud cost optimization, and upskilling in-house developers.",
     badge: "ADVISORY & LEADERSHIP",
     color: "emerald"
   },

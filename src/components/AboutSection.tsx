@@ -40,7 +40,7 @@ export const AboutSection: React.FC = () => {
             Who am I<span className="text-calm-indigo-400">?</span>
           </h2>
           <p className="text-xs sm:text-sm text-[#94a3b8] font-sans">
-            Software Engineer &amp; AI Systems Architect bridging high-scale backends with autonomous multi-agent intelligence.
+            Product-minded Software Engineer &amp; Full-Stack AI Systems Architect with 4+ years of experience leading teams of up to 5 engineers.
           </p>
         </div>
 
@@ -73,7 +73,7 @@ export const AboutSection: React.FC = () => {
                         Sawan Goyal
                       </h3>
                       <p className="font-mono text-[10px] text-calm-indigo-400">
-                        IIT Bombay &bull; Ex-Saptang Labs
+                        IIT Bombay &bull; Senior SWE @ Ksquare
                       </p>
                     </div>
                     <span className="px-1.5 py-0.5 rounded bg-calm-emerald-950/50 border border-calm-emerald-800/60 text-calm-emerald-400 font-mono text-[9px] font-semibold flex items-center gap-1">
@@ -120,11 +120,11 @@ export const AboutSection: React.FC = () => {
             {/* Concise Bio Narrative */}
             <div className="space-y-2 text-xs sm:text-sm text-[#cbd5e1] leading-relaxed">
               <p>
-                I&apos;m <strong className="text-[#f1f5f9] font-semibold">Sawan Goyal</strong>, a Software Engineer and AI Systems Architect based in <strong className="text-[#f1f5f9] font-medium">Bengaluru, Karnataka, India</strong>. I graduated with a <strong className="text-calm-indigo-300 font-medium">B.Tech from IIT Bombay (2018–2022)</strong> and was awarded a <strong className="text-calm-amber-400 font-medium">Gold Medal</strong> at the Inter-IIT Tech Meet NetSec Hackathon.
+                I&apos;m <strong className="text-[#f1f5f9] font-semibold">Sawan Goyal</strong>, a product-minded Software Engineer and Full-Stack AI Systems Architect based in <strong className="text-[#f1f5f9] font-medium">Bengaluru, Karnataka</strong>. I graduated with a <strong className="text-calm-indigo-300 font-medium">B.Tech in Materials Science from IIT Bombay (2018–2022)</strong> and was awarded a <strong className="text-calm-amber-400 font-medium">Gold Medal</strong> at the Inter-IIT Tech Meet NetSec Hackathon.
               </p>
 
               <p>
-                Previously at <strong className="text-[#f1f5f9] font-medium">Saptang Labs</strong>, I led the architecture of an enterprise bot-mitigation platform benchmarked at <strong className="text-calm-emerald-400 font-semibold">80M+ events/hr (6 TB/day) and 60,000 RPS</strong> with custom C++ NGINX reverse-proxy filtering. Today, I architect production-grade multi-agent systems, high-throughput RAG pipelines, and low-latency cloud infrastructure.
+                With <strong className="text-zinc-100 font-semibold">4+ years of experience</strong>, I lead engineering teams of up to 5 developers from ambiguous specs through production delivery. At <strong className="text-[#f1f5f9] font-medium">Ksquare Systems</strong>, I architected REPSS (Voice AI + Spatial Property Scoring), Enterprise Knowledge Base (30% productivity gain), and HiRed (Agentic Hiring across 50+ platforms). Previously at <strong className="text-[#f1f5f9] font-medium">Saptang Labs</strong>, I led 2 engineers delivering Excalibur, a real-time bot-mitigation platform processing <strong className="text-calm-emerald-400 font-semibold">80M+ events/hr (6 TB/day) and 60,000 RPS</strong> with C++ NGINX/WAF in-path filtering.
               </p>
             </div>
 

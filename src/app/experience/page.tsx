@@ -30,7 +30,7 @@ export default function ExperiencePage() {
           </Link>
 
           <div className="font-mono text-xs text-zinc-400">
-            KSquare Systems &bull; Saptang Labs
+            Ksquare Systems &bull; Saptang Labs
           </div>
         </div>
 
@@ -50,7 +50,7 @@ export default function ExperiencePage() {
           </h1>
 
           <p className="text-base sm:text-lg text-[#94a3b8] leading-relaxed">
-            Hands-on technical leadership across autonomous multi-agent AI systems, multimodal valuation engines, and high-scale distributed backends (80M+ events/hr).
+            4+ years of hands-on technical leadership across full-stack AI products, multi-agent systems, Voice AI, and high-scale distributed backends (80M+ events/hr).
           </p>
         </header>
 
