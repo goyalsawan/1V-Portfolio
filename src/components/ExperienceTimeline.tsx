@@ -13,25 +13,25 @@ export const ExperienceTimeline: React.FC = () => {
   return (
     <section
       id="experience"
-      className="snap-slide h-screen min-h-screen flex flex-col justify-center py-8 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
+      className="snap-slide min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
     >
       <div className="max-w-6xl mx-auto w-full space-y-5">
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-rose-400 bg-calm-rose-950/40 border border-calm-rose-800/50 px-2.5 py-0.5 rounded">
-              06 // CAREER
+              06 // INDUSTRY TRACK RECORD
             </span>
             <BrutalistBadge color="rose" size="sm">
               PROFESSIONAL TRACK RECORD
             </BrutalistBadge>
             <BrutalistBadge color="emerald" size="sm">
-              PRODUCTION SCALE & AI
+              PRODUCTION SCALE &amp; AI
             </BrutalistBadge>
           </div>
 
           <div className="font-mono text-xs text-zinc-400 bg-[#181d28] border border-[#283144] px-2.5 py-0.5 rounded-md">
-            KSquare Systems &bull; Saptang Labs
+            Ksquare Systems &bull; Saptang Labs
           </div>
         </div>
 

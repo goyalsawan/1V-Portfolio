@@ -10,29 +10,34 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="snap-slide min-h-screen flex flex-col justify-center bg-[#12151c] text-[#e2e8f0] pt-20 pb-16 px-4 sm:px-6 relative border-b border-[#242b3a]"
+      className="snap-slide min-h-screen flex flex-col justify-center bg-[#12151c] text-[#e2e8f0] py-12 sm:py-16 px-4 sm:px-6 relative border-b border-[#242b3a]"
     >
-      <div className="max-w-6xl mx-auto w-full space-y-8">
+      <div className="max-w-6xl mx-auto w-full space-y-6">
         {/* Top Badges */}
-        <div className="inline-flex flex-wrap items-center gap-2">
-          <BrutalistBadge color="indigo" size="md">
-            SOFTWARE ENGINEER | FULL STACK AI SYSTEMS
-          </BrutalistBadge>
-          <BrutalistBadge color="emerald" size="md">
-            IIT BOMBAY GRADUATE
-          </BrutalistBadge>
-          <span className="font-mono text-xs font-semibold text-zinc-400 bg-[#181d28] border border-[#283144] px-3 py-1 rounded-md">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-mono text-xs font-bold text-calm-indigo-400 bg-calm-indigo-950/40 border border-calm-indigo-800/50 px-2.5 py-0.5 rounded">
+              01 // OVERVIEW
+            </span>
+            <BrutalistBadge color="indigo" size="sm">
+              SOFTWARE ENGINEER | FULL STACK AI SYSTEMS
+            </BrutalistBadge>
+            <BrutalistBadge color="emerald" size="sm">
+              IIT BOMBAY GRADUATE
+            </BrutalistBadge>
+          </div>
+          <span className="font-mono text-xs font-semibold text-zinc-400 bg-[#181d28] border border-[#283144] px-2.5 py-0.5 rounded-md">
             4+ YEARS &bull; TEAMS UP TO 5 ENG
           </span>
         </div>
 
         {/* Hero Title & Value Proposition */}
-        <div className="space-y-5 max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading tracking-tight text-[#f1f5f9] leading-[1.1]">
+        <div className="space-y-4 max-w-4xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-heading tracking-tight text-[#f1f5f9] leading-[1.15]">
             Architecting <span className="text-calm-indigo-400">Full-Stack AI &amp; High-Throughput</span> Systems.
           </h1>
 
-          <p className="text-lg sm:text-xl text-[#94a3b8] font-sans leading-relaxed font-normal max-w-3xl">
+          <p className="text-base sm:text-lg text-[#94a3b8] font-sans leading-relaxed font-normal max-w-3xl">
             Product-minded Software Engineer (IIT Bombay) with 4+ years of experience architecting and leading full-stack AI products, multi-agent LangGraph systems, conversational Voice AI, and high-throughput cloud services (80M+ events/hr). Led teams of up to 5 engineers from ambiguous requirements through scalable delivery.
           </p>
         </div>

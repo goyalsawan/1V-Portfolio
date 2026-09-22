@@ -39,34 +39,34 @@ export const ContactSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="snap-slide min-h-screen flex flex-col justify-center py-20 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
+      className="snap-slide min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
     >
-      <div className="max-w-6xl mx-auto w-full space-y-6">
+      <div className="max-w-6xl mx-auto w-full space-y-5 sm:space-y-6">
         {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#242b3a]">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-amber-400 bg-calm-amber-950/40 border border-calm-amber-800/50 px-2.5 py-0.5 rounded">
-              08 // CONTACT
+              08 // GET IN TOUCH
             </span>
-            <BrutalistBadge color="amber" size="md">
+            <BrutalistBadge color="amber" size="sm">
               GET IN TOUCH
             </BrutalistBadge>
-            <BrutalistBadge color="emerald" size="md">
+            <BrutalistBadge color="emerald" size="sm">
               OPEN FOR ROLES &amp; CONTRACTS
             </BrutalistBadge>
           </div>
 
-          <div className="font-mono text-xs text-zinc-400 bg-[#181d28] border border-[#283144] px-3 py-1 rounded-md">
+          <div className="font-mono text-xs text-zinc-400 bg-[#181d28] border border-[#283144] px-2.5 py-0.5 rounded-md">
             Direct Inbox &bull; Bengaluru, IN
           </div>
         </div>
 
-        <div className="space-y-1.5 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold font-heading text-[#f1f5f9] tracking-tight">
-            Let&apos;s Connect & Build Systems
+        <div className="space-y-1 max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-heading text-[#f1f5f9] tracking-tight">
+            Let&apos;s Connect &amp; Build Systems
           </h2>
-          <p className="text-sm sm:text-base text-[#94a3b8] font-sans leading-relaxed">
-            Available for full-time Software Engineer, AI Systems, Cloud & High-Throughput Distributed Infrastructure roles.
+          <p className="text-xs sm:text-sm text-[#94a3b8] font-sans leading-relaxed">
+            Available for full-time Software Engineer, AI Systems, Cloud &amp; High-Throughput Distributed Infrastructure roles and selective consulting sprints.
           </p>
         </div>
 

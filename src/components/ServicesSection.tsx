@@ -32,17 +32,17 @@ export const ServicesSection: React.FC = () => {
   return (
     <section
       id="services"
-      className="snap-slide min-h-screen flex flex-col justify-center py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
+      className="snap-slide min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
     >
-      <div className="max-w-6xl mx-auto w-full space-y-4">
+      <div className="max-w-6xl mx-auto w-full space-y-5">
         {/* Header */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-[#242b3a]">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-indigo-400 bg-calm-indigo-950/40 border border-calm-indigo-800/50 px-2.5 py-0.5 rounded">
-              CHAPTER 04
+              04 // SERVICES &amp; ADVISORY
             </span>
             <BrutalistBadge color="indigo" size="sm">
-              SERVICES & ADVISORY
+              SERVICES &amp; ADVISORY
             </BrutalistBadge>
             <BrutalistBadge color="emerald" size="sm">
               5 CORE PILLARS
@@ -53,7 +53,7 @@ export const ServicesSection: React.FC = () => {
             href="/services/"
             className="text-xs font-mono text-calm-indigo-400 hover:text-calm-indigo-300 flex items-center gap-1 transition-colors"
           >
-            <span>Detailed Deep-Dive & Rates</span>
+            <span>Detailed Deep-Dive &amp; Rates</span>
             <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>

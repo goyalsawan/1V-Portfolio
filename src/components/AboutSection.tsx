@@ -11,9 +11,9 @@ export const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="snap-slide h-screen min-h-screen flex flex-col justify-center px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative py-8"
+      className="snap-slide min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
     >
-      <div className="max-w-5xl mx-auto w-full space-y-5">
+      <div className="max-w-6xl mx-auto w-full space-y-6">
         {/* Header Badges */}
         <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">

@@ -11,35 +11,35 @@ export const ProjectsTeaser: React.FC = () => {
   return (
     <section
       id="projects"
-      className="snap-slide min-h-screen flex flex-col justify-center py-20 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
+      className="snap-slide min-h-screen flex flex-col justify-center py-12 sm:py-16 px-4 sm:px-6 bg-[#12151c] text-[#e2e8f0] border-b border-[#242b3a] relative"
     >
-      <div className="max-w-6xl mx-auto w-full space-y-8">
+      <div className="max-w-6xl mx-auto w-full space-y-6">
         {/* Header Badges */}
-        <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-[#242b3a]">
+        <div className="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-[#242b3a]">
           <div className="flex flex-wrap items-center gap-2">
             <span className="font-mono text-xs font-bold text-calm-indigo-400 bg-calm-indigo-950/40 border border-calm-indigo-800/50 px-2.5 py-0.5 rounded">
               03 // PROJECTS
             </span>
-            <BrutalistBadge color="indigo" size="md">
+            <BrutalistBadge color="indigo" size="sm">
               ENTERPRISE AI PORTFOLIO
             </BrutalistBadge>
-            <BrutalistBadge color="emerald" size="md">
+            <BrutalistBadge color="emerald" size="sm">
               PRODUCTION VERIFIED
             </BrutalistBadge>
           </div>
 
-          <div className="font-mono text-xs text-zinc-400 bg-[#181d28] border border-[#283144] px-3 py-1 rounded-md">
-            {PROJECTS.length} Enterprise Flagship Systems
+          <div className="font-mono text-xs text-zinc-400 bg-[#181d28] border border-[#283144] px-2.5 py-0.5 rounded-md">
+            {PROJECTS.length} Flagship Production Systems
           </div>
         </div>
 
-        {/* Big Projects Banner & Description */}
-        <div className="space-y-4 max-w-4xl">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold font-heading text-[#f1f5f9] tracking-tight leading-none">
-            Projects<span className="text-calm-indigo-400">.</span>
+        {/* Projects Title & Description */}
+        <div className="space-y-1.5 max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold font-heading text-[#f1f5f9] tracking-tight">
+            Flagship Engineering Systems
           </h2>
-          <p className="text-lg sm:text-xl text-[#94a3b8] font-sans leading-relaxed font-normal">
-            Explore battle-tested enterprise architectures, autonomous multi-agent workflows, and multimodal intelligence engines to see how my engineering capabilities align with your product roadmap and technical challenges.
+          <p className="text-xs sm:text-sm text-[#94a3b8] font-sans leading-relaxed">
+            Battle-tested multi-agent architectures, low-latency Voice AI, automated sourcing grids, and real-time bot defense (80M+ events/hr).
           </p>
         </div>
 
